@@ -1,0 +1,60 @@
+.fieldWithErrors {
+    display: inline;
+}
+
+#errorExplanation {
+    background-color: #fcc;
+    margin: 2px 0;
+    border: solid 1px #f66;
+}
+
+#errorExplanation h2 {
+    padding: 2px 5px;
+    color: #333;
+    font-size: 11px;
+    margin: 0;
+    letter-spacing: 0;
+    font-family: Verdana;
+    background-color: #f66;
+}
+
+#errorExplanation ul {
+    margin: 0;
+    padding: 0 2px 4px 25px;
+    list-style: disc;
+}
+
+#errorExplanation p {
+    font-size: 11px;
+    padding: 2px 5px;
+    font-family: Verdana;
+    margin: 0;
+}
+
+#errorExplanation ul li {
+    font: bold 11px verdana;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+div.uploadStatus {
+    margin: 5px;
+}
+
+div.progressBar {
+    margin: 5px;
+}
+
+div.progressBar div.border {
+    background-color: #fff;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+div.progressBar div.background {
+    background-color: #333;
+    height: 18px;
+    width: 0%;
+}

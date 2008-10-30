@@ -49,7 +49,7 @@ Rails::Initializer.run do |config|
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
     :session_key => '_crossgate_session',
-    :secret      => '9bdcae1fadd0d948e3bb8eb18399843ebfc783938892e0ce25786efec81d95f598141c26d2b720c18096d863ee852f0d35c0ba62fee7938280a5447ac72eb95b'
+    :secret      => '9bdcae1fadd0d948e3bb8eb18399843e'
   }
 
   # Use the database for sessions instead of the cookie-based default,

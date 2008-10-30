@@ -1,0 +1,26 @@
+.item
+  %h1 用户列表
+  %table.list
+    %tr
+      %th ID
+      %th 电子邮件
+      %th 昵称
+      %th 性别
+      %th 注册时间
+      %th 最后登录IP
+      %th 最后登录时间
+      %th 操作
+    = empty_record_tag 8 if @users.blank?
+    - @users.each_with_index do |user, index|
+      %tr{:class => odevity_tag(index)}
+        %td= user.id
+        %td= link_to user.email, admin_user_path(user)
+        %td= user.screen_name
+        %td= human_gender_for user.gender
+        %td= human_datetime_for user.created_at
+        %td= user.last_login_from
+        %td= human_datetime_for user.last_login_at
+        %td= crud_for_list_tag user
+  = will_paginate @users
+      
+        
