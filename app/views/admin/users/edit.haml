@@ -1,0 +1,20 @@
+.item
+  %h1 编辑用户
+  = error_messages_for :user
+  - form_for([:admin, @user]) do |f|
+    %table.form
+      %tr
+        %th 电子邮件
+        %td= f.text_field :email, :class => 'text'
+      %tr
+        %th 昵称
+        %td= f.text_field :screen_name, :class => 'text'
+      %tr
+        %th 性别
+        %td
+          = f.radio_button :gender, User::GenderMale
+          男
+          = f.radio_button :gender, User::GenderFemale
+          女
+      %tr
+        %td.action{:colspan => 2}= f.submit '提交', :class => 'button'
